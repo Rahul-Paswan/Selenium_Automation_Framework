@@ -31,5 +31,14 @@
         </classes>
     </test>
 
+    <test name="TC04" enabled="true">
+        <parameter name="browserName" value="edge"/>
+        <parameter name="authorName" value="Rahul Paswan"/>
+        <parameter name="category" value="Regression"/>
+        <classes>
+            <class name="com.rahul.testcases.TestSuite_99031.TC_03_LoginTest" />
+        </classes>
+    </test>
+
 </suite>
 
