@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Configuration status="WARN">
+    <properties>
+        <Property name ="logfilePath">.\Application_Logs</Property>
+        <Property name ="appVersion">03.06.09P56</Property>
+    </properties>
+    <Appenders>
+        <!-- Console Appender -->
+        <Console name="ConsoleAppender" target="SYSTEM_OUT">
+            <PatternLayout pattern="%d{HH:mm:ss} %-5level [%t] %c{1} - %msg%n"/>
+        </Console>
+
+        <!-- Dynamic File Appender per test -->
+        <Routing name="TestMethodRouting">
+            <Routes pattern="$${ctx:testName}">
+                <Route>
+                    <RollingFile name="RollingFile-${ctx:testName}"
+                                 fileName="${logfilePath}/${appVersion}/${ctx:testName}.log"
+                                 filePattern="logs/archived/${ctx:testName}-%d{yyyy-MM-dd-HH-mm-ss}-%i.log.gz">
+                        <PatternLayout pattern="%d{yyyy-MM-dd HH:mm:ss.SSS} [%t] %-5level %logger{36} - %msg%n"/>
+                        <Policies>
+                            <SizeBasedTriggeringPolicy size="10MB"/>
+                        </Policies>
+                        <DefaultRolloverStrategy max="5"/>
+                    </RollingFile>
+                </Route>
+            </Routes>
+        </Routing>
+    </Appenders>
+    <Loggers>
+        <Root level="info">
+<!--            <AppenderRef ref="ConsoleAppender"/>-->
+            <AppenderRef ref="TestMethodRouting"/>
+        </Root>
+    </Loggers>
+</Configuration>

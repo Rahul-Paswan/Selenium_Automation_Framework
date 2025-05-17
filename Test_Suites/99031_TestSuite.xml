@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="99031_TestSuite"  preserve-order="true">
+<listeners>
+    <listener class-name="com.rahul.Listeners.TestListener"/>
+</listeners>
+    <test name="TC01" enabled="true">
+        <parameter name="browserName" value="edge"/>
+        <parameter name="authorName" value="Rahul Paswan"/>
+        <parameter name="category" value="Sanity"/>
+        <classes>
+            <class name="com.rahul.testcases.TestSuite_99031.TC01_UserRegistrationTest" />
+        </classes>
+    </test>
+
+    <test name="TC02" enabled="true">
+        <parameter name="browserName" value="edge"/>
+        <parameter name="authorName" value="Rahul Paswan"/>
+        <parameter name="category" value="Smoke"/>
+        <classes>
+            <class name="com.rahul.testcases.TestSuite_99031.TC_02_LoginTest" />
+        </classes>
+    </test>
+
+    <test name="TC03" enabled="true">
+        <parameter name="browserName" value="edge"/>
+        <parameter name="authorName" value="Rahul Paswan"/>
+        <parameter name="category" value="Regression"/>
+        <classes>
+            <class name="com.rahul.testcases.TestSuite_99031.TC_03_LoginTest" />
+        </classes>
+    </test>
+
+</suite>
+

@@ -1,0 +1,13 @@
+{
+  "theme": "standard",
+  "encoding": "utf-8",
+  "protocol": "https",
+  "documentTitle": "Automation Test Report",
+  "reportName": "Regression Suite",
+  "timestampFormat": "MMM dd, yyyy HH:mm:ss",
+  "timeStampFormat": "MMM dd, yyyy HH:mm:ss",
+  "offlineMode": false,
+  "enableTimeline": true,
+  "chartVisibilityOnOpen": true
+}
+

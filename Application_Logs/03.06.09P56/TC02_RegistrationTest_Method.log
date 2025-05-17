@@ -1,0 +1,20 @@
+2025-05-17 11:51:43.700 [main] INFO  TC02_RegistrationTest_Method - ------------------------------RegistrationTest_Method Test is Started-----------------------------------
+2025-05-17 11:51:46.914 [main] INFO  TC02_RegistrationTest_Method - Application url launched successfully.
+2025-05-17 11:51:47.001 [main] INFO  TC02_RegistrationTest_Method - Logo is visible on landing page of application.
+2025-05-17 11:51:48.685 [main] INFO  TC02_RegistrationTest_Method - Clicked on loginSignUp button.
+2025-05-17 11:51:48.942 [main] INFO  TC02_RegistrationTest_Method - Navigated to LoginSignUp Page.
+2025-05-17 11:51:49.309 [main] INFO  TC02_RegistrationTest_Method - Username entered successfully.
+2025-05-17 11:51:49.583 [main] INFO  TC02_RegistrationTest_Method - Email entered successfully.
+2025-05-17 11:51:50.791 [main] INFO  TC02_RegistrationTest_Method - SignUp Button Clicked successfully.
+2025-05-17 11:51:52.868 [main] INFO  TC02_RegistrationTest_Method - Navigated to Registration Page.
+2025-05-17 11:51:52.908 [main] FATAL TC02_RegistrationTest_Method - ------------------------------RegistrationTest_Method Test is Failed.-----------------------------------
+2025-05-17 11:51:52.909 [main] FATAL TC02_RegistrationTest_Method - Failure Reason is:org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {"method":"css selector","selector":"input[type='radio'][value='Mr']"}
+  (Session info: MicrosoftEdge=136.0.3240.64)
+For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#no-such-element-exception
+Build info: version: '4.29.0', revision: '5fc1ec94cb'
+System info: os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '21.0.6'
+Driver info: org.openqa.selenium.edge.EdgeDriver
+Command: [2c0d3467cbefec2b2eddb06a1c3639ca, findElement {using=css selector, value=input[type='radio'][value='Mr']}]
+Capabilities {acceptInsecureCerts: false, browserName: MicrosoftEdge, browserVersion: 136.0.3240.64, fedcm:accounts: true, ms:edgeOptions: {debuggerAddress: localhost:56940}, msedge: {msedgedriverVersion: 136.0.3240.76 (77e9ec69748f..., userDataDir: C:\Windows\SystemTemp\scope...}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:56940/devtoo..., se:cdpVersion: 136.0.3240.64, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: 2c0d3467cbefec2b2eddb06a1c3639ca
+2025-05-17 11:51:53.238 [main] INFO  TC02_RegistrationTest_Method - ------------------------------RegistrationTest_Method Test is Ended-----------------------------------

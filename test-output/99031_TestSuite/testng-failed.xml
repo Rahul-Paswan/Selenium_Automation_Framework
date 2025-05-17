@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+<suite name="Failed suite [99031_TestSuite]" guice-stage="DEVELOPMENT">
+  <listeners>
+    <listener class-name="com.rahul.Listeners.TestListener"/>
+  </listeners>
+  <test thread-count="5" name="TC01(failed)">
+    <parameter name="authorName" value="Rahul Paswan"/>
+    <parameter name="browserName" value="edge"/>
+    <parameter name="category" value="Sanity"/>
+    <classes>
+      <class name="com.rahul.testcases.TestSuite_99031.TC01_UserRegistrationTest">
+        <methods>
+          <include name="UserRegistrationTestMethod" invocation-numbers="0"/>
+          <include name="BeforeMethod"/>
+          <include name="AfterMethod"/>
+          <include name="AfterSuite"/>
+          <include name="BeforeSuit"/>
+        </methods>
+      </class> <!-- com.rahul.testcases.TestSuite_99031.TC01_UserRegistrationTest -->
+    </classes>
+  </test> <!-- TC01(failed) -->
+  <test thread-count="5" name="TC02(failed)">
+    <parameter name="authorName" value="Rahul Paswan"/>
+    <parameter name="browserName" value="edge"/>
+    <parameter name="category" value="Smoke"/>
+    <classes>
+      <class name="com.rahul.testcases.TestSuite_99031.TC_02_LoginTest">
+        <methods>
+          <include name="RegistrationTest_Method" invocation-numbers="0"/>
+          <include name="BeforeMethod"/>
+          <include name="AfterMethod"/>
+          <include name="AfterSuite"/>
+          <include name="BeforeSuit"/>
+          <include name="loginTestMethod_CorrectUsridPassword"/>
+        </methods>
+      </class> <!-- com.rahul.testcases.TestSuite_99031.TC_02_LoginTest -->
+    </classes>
+  </test> <!-- TC02(failed) -->
+</suite> <!-- Failed suite [99031_TestSuite] -->
